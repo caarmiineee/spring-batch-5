@@ -1,4 +1,4 @@
-package com.example.springbatch;
+package com.example.springbatch.batch.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,9 +26,11 @@ public class JobCompletionNotificationListener implements JobExecutionListener {
 		if(jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			log.info("!!! JOB FINISHED! Time to verify the results");
 
+			/*
 			jdbcTemplate
 					.query("SELECT first_name, last_name FROM people", new DataClassRowMapper<>(Person.class))
 					.forEach(person -> log.info("Found <{{}}> in the database.", person));
+			*/
 		}
 	}
 }
