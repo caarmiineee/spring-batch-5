@@ -1,5 +1,8 @@
-/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/PersonItemProcessor.java
-/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/JobCompletionNotificationListener.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/controller/CustomerController.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/step/CustomerItemReader.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/config/BatchConfig.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/record/Customer.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/step/CustomerItemWriter.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/step/CustomerItemProcessor.java
 /home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/SpringbatchApplication.java
-/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/BatchConfiguration.java
-/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/Person.java
+/home/oc/projects/spring-batch-5/src/main/java/com/example/springbatch/batch/listener/JobCompletionNotificationListener.java

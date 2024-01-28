@@ -1,5 +1,8 @@
-com/example/springbatch/PersonItemProcessor.class
-com/example/springbatch/Person.class
-com/example/springbatch/BatchConfiguration.class
-com/example/springbatch/JobCompletionNotificationListener.class
+com/example/springbatch/batch/step/CustomerItemWriter.class
+com/example/springbatch/batch/step/CustomerItemProcessor.class
+com/example/springbatch/controller/CustomerController.class
+com/example/springbatch/batch/listener/JobCompletionNotificationListener.class
+com/example/springbatch/batch/record/Customer.class
+com/example/springbatch/batch/step/CustomerItemReader.class
 com/example/springbatch/SpringbatchApplication.class
+com/example/springbatch/batch/config/BatchConfig.class
