@@ -42,6 +42,15 @@ public class BatchConfiguration {
 	}
 
 	@Bean
+	public FlatFileItemWriter<Person> fileWriter() {
+		return new FlatFileItemWriterBuilder<Person>()
+				.name("personItemWriter")
+				.resource(new FileSystemResource("sample-data-result.csv"))
+				.lineAggregator(new PassThroughLineAggregator<>())
+				.build();
+	}
+
+	@Bean
 	public JdbcBatchItemWriter<Person> writer(DataSource dataSource) {
 		JdbcBatchItemWriterBuilder<Person> personJdbcBatchItemWriterBuilder = new JdbcBatchItemWriterBuilder<Person>()
 			.sql("INSERT INTO people (first_name, last_name) VALUES (:firstName, :lastName)")
@@ -69,6 +78,7 @@ public class BatchConfiguration {
 				.reader(reader)
 				.processor(processor)
 				.writer(writer)
+				.writer(fileWriter())
 				.build();
 	}
 	// end::jobstep[]
