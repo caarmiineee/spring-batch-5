@@ -1,0 +1,5 @@
+/home/oc/projects/springbatch/src/main/java/com/example/springbatch/Person.java
+/home/oc/projects/springbatch/src/main/java/com/example/springbatch/BatchConfiguration.java
+/home/oc/projects/springbatch/src/main/java/com/example/springbatch/SpringbatchApplication.java
+/home/oc/projects/springbatch/src/main/java/com/example/springbatch/PersonItemProcessor.java
+/home/oc/projects/springbatch/src/main/java/com/example/springbatch/JobCompletionNotificationListener.java
